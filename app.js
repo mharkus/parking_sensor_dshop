@@ -37,7 +37,7 @@ xbeeAPI.on("frame_object", function (frame) {
 	var deviation = sensorValue - previous.entry;
 	if(deviation >= SENSOR_THRESHOLD){
 		entryToggle = !entryToggle;
-		if(entryToggle && carCount < 10){
+		if(entryToggle && carCount < 7){
 			carCount++;
 		}
 
